@@ -1,0 +1,7 @@
+
+/* ? ALL COLORS ================
+   * Blue: #106EEA
+   * Light blue: #F6F9FE 
+   * Border color: #f1f1f1
+   * Text color: gray
+? ============================== */

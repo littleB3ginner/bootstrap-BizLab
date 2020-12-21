@@ -1,0 +1,530 @@
+/* ? COLORS ================
+   * Blue: #106EEA
+   * Light blue: #F6F9FE 
+   * Border color: #f1f1f1
+   * Text color: gray
+? ============================== */
+
+/* ? GLOBBAL */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p,span,b,strong{
+    color: gray;
+}
+
+
+/*? INFO BG */
+
+.info-bg{
+    background-color: #106EEA;
+    color: #fff;
+    padding: .4rem 0;
+}
+
+.info-bg span{
+    color: #fff;
+}
+
+.right i{
+    padding-left: 1rem;
+}
+
+.left i span{
+    padding-left: 0.5rem;
+}
+
+/* ? NAVBAR */
+
+.navigation{
+    background: #fff;
+    padding: 25px 0;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.navigation .logo {
+    font-size: 32px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    font-family: "Poppins", sans-serif;
+}
+
+.navigation .logo a{
+    color: #222222;
+    text-decoration: none;
+}
+
+.collapse a{
+    display: block;
+    color: #222222;
+    transition: 0.3s;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 0 3px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.nav-padding{
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+
+/* ? UNDERLINE ANIMATION */
+
+.cool-link::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #106EEA;
+    transition: width .3s;
+}
+
+.cool-link:hover::after {
+    width: 100%;
+}
+
+.navbar-nav .active::after {
+    visibility: visible;
+    width: 100%;
+}
+
+.navbar-nav .active{
+    color: #106eea;
+}
+
+.navbar-nav a:hover{
+    color: #106eea;
+}
+
+/*? HEADER */
+
+.header-img{
+    background-image: url("../img/hero-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    position: relative;
+    
+}
+
+.header-img .container{
+    position: relative;
+    z-index: 10;
+}
+
+.header-img .container h1{
+    margin: 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #222222;
+    font-family: "Poppins", sans-serif;
+}
+
+.header-img .container h2{
+    color: #555555;
+    margin: 5px 0 30px 0;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.header-img .content i{
+    font-size: 32px;
+}
+
+.header-img .content .btn span {
+    color: #222222;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.btn-style{
+    padding: 10px 28px;
+}
+
+.white-bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+    z-index: 0;
+}
+
+/*? UTILITY */
+
+.colored-text{
+    color: #106EEA;
+}
+
+/*? Buttons */
+
+.btn-primary{
+   padding-left: 1.3rem;
+   padding-right: 1.3rem;
+}
+
+.btn-video{
+    display: flex;
+    align-items: center;
+}
+
+.btn-video i{
+    color: #106EEA;
+    font-size: 1.5rem;
+}
+
+/*? HEADER ICONS */
+
+.icon-card{
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 7px;
+    padding: 2rem;
+    transition: all 0.5s;
+}
+
+.icon-card:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+.icon-card i{
+    color: #106EEA;
+    font-size: 48px;
+    margin-bottom: 1rem;
+}
+
+.icon-container{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+/*?ABOUT*/
+
+.about-section{
+    background-color: #F6F9FE;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.about-section .section-item{
+    display: flex;
+    margin-top: 2rem;
+}
+
+.section-item .icon-box{
+    background: #fff;
+    box-shadow: 0px 6px 15px rgba(16, 110, 234, 0.12);
+    font-size: 24px;
+    padding: 20px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    color: #106eea;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-box i{
+    color: #106EEA;
+}
+
+.section-badge{
+    background-color: #cddbf3c9;
+    color:#106EEA;
+    border-radius: 100px;
+    padding: 0.3rem 0.9rem;
+    font-weight: bold;
+}
+
+/*? Services */
+
+.icon-card2{
+    border: 1px solid #e2eefd;
+    padding: 80px 16px;
+    align-items: center;
+    text-align: center;
+    margin-top: 1.5rem;
+    transition: all 0.5s;
+}
+
+.icon-card2:hover{
+    transform: scale(1.06);
+    transition: all 0.5s;
+}
+
+.icon-card2 i{
+    background-color: #F6F9FE;
+    color:#106EEA;
+    padding: 1.3rem;
+    font-size: 28px;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 5px;
+}
+
+/* ? BANNER */
+
+.header-img2{
+    background-image: url("../img/testimonials-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    position: relative;
+    
+}
+
+.header-img2 .container{
+    position: relative;
+    z-index: 10;
+}
+
+.black-bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(7, 6, 6, 0.719);
+    z-index: 0;
+}
+
+.content img{
+    width: 6rem;
+    height: 6rem;
+    border: 5px solid rgba(255, 255, 255, 0.200);
+    background-clip: border-box;
+}
+
+.header-img2 .content p i{
+    color: rgba(255, 255, 255, 0.4); 
+    font-size: 21px;
+}
+
+.content .circles i{
+    margin-right: .7rem;
+    color: #fff;
+    opacity: 0.5;
+    font-size: .8rem;
+}
+
+.header-img2 .container .style-this h5{
+    color: #fff;
+    font-weight: bold;
+}
+
+.header-img2 .container .style-this p{
+    opacity: 0.8;
+    color: #fff;
+}
+
+/*? Pricing */
+.pricing-section{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.pricing-section .card{
+    width: 100%;
+}
+
+.pricing-section .card-body{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.card-body .price{
+    display: flex;
+    align-items: center;
+}
+
+.card-body .price h2{
+    color: #106EEA;
+}
+
+.card-body .price span{
+    color: rgb(167, 167, 167);
+}
+
+.card-body del{
+    color: rgb(167, 167, 167);
+}
+
+.pricing-section .card-header{
+    border-bottom: none;
+}
+
+.pricing-section .card-footer{
+    border-top: none;
+}
+
+.card-body span,del{
+    margin-bottom: .4rem;
+}
+
+.card .active-header{
+    color: #fff;
+    background-color: #106EEA;
+}
+
+/*? NEWS */
+
+.news-section{
+    background-color: #F6F9FE;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.input-part{
+    width: 60%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.103);
+}
+
+/*? FOOTER */
+
+footer{
+    padding-top: 4rem;
+}
+
+footer ul{
+    list-style-position: inside;
+    list-style-image: url("../img/chevron-right-solid.svg");
+}
+
+footer ul li {
+    color: #777777;
+    padding: 10px 0;
+}
+
+footer h6{
+    font-weight: bold;
+    padding-bottom: 12px;
+}
+
+footer .social-links i{
+    font-size: 18px;
+    background-color: #106EEA;
+    color: #fff;
+    padding: .5rem;
+    width: 36px;
+    height: 36px;
+    margin-right: 4px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+/*? COPY */
+
+.copy{
+    background-color: #F6F9FE;
+    padding: 1.7rem 0;
+    margin-top: 1.5rem;
+}
+
+.back{
+    position:relative;
+}
+
+.right-corner{
+    position:absolute;
+    bottom:0;
+    right:.5rem;
+}
+
+.back i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    background: #106eea;
+    color: #fff;
+}
+
+/* ! RESPONSIVE ! */
+
+@media(max-width:575.98px){
+    .info-bg{
+        display: none;
+    }
+
+    .header-img{
+        height: 70vh;
+    }
+
+    .icon-card{
+        margin-bottom: 1rem;
+        padding: 1rem;
+    }
+
+    .about-section img{
+        margin-bottom: 2rem;
+    }
+
+    .pricing-section .card{
+        margin-bottom: 1rem;
+        width: 80%;
+    }
+
+    .margin-top-xs{
+        margin-top: .5rem;
+    }
+
+    .copy span{
+        font-size: .7rem;
+    }
+
+    .back i{
+        display: none;
+    }
+
+}
+
+/*? MD */
+
+@media(min-width:768px) and (max-width:991.98px){
+    .icon-card{
+        margin-bottom: 2rem;
+    }
+
+    .icon-card2 {
+        padding: 40px 27px;
+    }
+
+    .about-section img{
+        margin-bottom: 2rem;
+    }
+
+    .pricing-section .card{
+        margin-bottom: 2rem;
+        width: 90%;
+    }
+
+    .copy .margin-md{
+        margin:1%;
+    }
+
+}
+
+/* *LG* */
+
+@media (min-width:992px) and (max-width: 1199.98px){
+
+    .pricing-section .card {
+        width: 100%;
+    }
+
+    .copy .margin-md{
+        margin:1%;
+    }
+}
